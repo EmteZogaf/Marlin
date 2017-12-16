@@ -11,7 +11,11 @@ A monumental amount of talent and effort goes into Marlin production, and thanks
 - See the [Releases](https://github.com/MarlinFirmware/Marlin/releases) page for Release Notes on all current and previous versions of Marlin.
 - Check out the [RepRap.org Marlin Page](http://reprap.org/wiki/Marlin) for an overview of Marlin and its role in the RepRap project.
 
+<<<<<<< Upstream, based on base/1.1.x
 ## Marlin 1.1.x
+=======
+This Release branch contains the latest tagged version of Marlin (currently 1.1.7 – December 2017).
+>>>>>>> 459094e Version 1.1.7
 
 The 1.1.x branch is home to all tagged releases of Marlin 1.1.
 
@@ -75,6 +79,7 @@ Notable contributors:
  - [[@android444](https://github.com/android444)]
  - [[@benlye](https://github.com/benlye)]
  - [[@bgort](https://github.com/bgort)]
+ - [[@ejtagle](https://github.com/ejtagle)]
  - [[@Grogyan](https://github.com/Grogyan)]
  - [[@marcio-ao](https://github.com/marcio-ao)]
  - [[@maverikou](https://github.com/maverikou)]
