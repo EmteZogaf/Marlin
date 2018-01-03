@@ -148,7 +148,7 @@
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME "Aurora A5"
+#define CUSTOM_MACHINE_NAME "JGAurora A5"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -665,8 +665,8 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 8.0
-#define DEFAULT_YJERK                 8.0
+#define DEFAULT_XJERK                  8.0
+#define DEFAULT_YJERK                  8.0
 #define DEFAULT_ZJERK                  0.3
 #define DEFAULT_EJERK                  5.0
 
