@@ -22,7 +22,7 @@
 
 /**
  * JGAurora A5 3D Printer Firmware - Based on Marlin
- * Authors: Telli Mantelli, Kris Waclawski & Michael Gilardi
+ * Authors: Telli Mantelli, Kris Waclawski, Michael Gilardi & Samuel Pinches
  *
  * This fork of Marlin was created by the community for the 
  * JGAurora A5 3D printer. Big thanks to the Marlin developers
@@ -407,10 +407,10 @@
   //#define DEFAULT_Ki 2.25
   //#define DEFAULT_Kd 440
 
-  // JGAurora A5
-  #define  DEFAULT_Kp 22.2
-  #define  DEFAULT_Ki 1.08
-  #define  DEFAULT_Kd 114
+  // JGAurora A5 (tuned at 210C)
+  #define  DEFAULT_Kp 35.3//22.2
+  #define  DEFAULT_Ki 4.35//1.08
+  #define  DEFAULT_Kd 71.57//114
 
 #endif // PIDTEMP
 
@@ -481,7 +481,7 @@
  * Note: For Bowden Extruders make this large enough to allow load/unload.
  */
 #define PREVENT_LENGTHY_EXTRUDE
-#define EXTRUDE_MAXLENGTH 200
+#define EXTRUDE_MAXLENGTH 1000
 
 //===========================================================================
 //======================== Thermal Runaway Protection =======================
@@ -628,7 +628,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 86 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 102 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -643,7 +643,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 800, 800, 100, 5000 }
+#define DEFAULT_MAX_ACCELERATION      { 1000, 500, 100, 5000 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -666,7 +666,7 @@
  * value set here, it may happen instantaneously.
  */
 #define DEFAULT_XJERK                  8.0
-#define DEFAULT_YJERK                  8.0
+#define DEFAULT_YJERK                  3.0
 #define DEFAULT_ZJERK                  0.3
 #define DEFAULT_EJERK                  5.0
 
@@ -1169,8 +1169,8 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (50*60)
-#define HOMING_FEEDRATE_Z  (4*60)
+#define HOMING_FEEDRATE_XY (80*60)
+#define HOMING_FEEDRATE_Z  (12*60)
 
 // @section calibrate
 
@@ -1275,9 +1275,9 @@
 // @section temperature
 
 // Preheat Constants
-#define PREHEAT_1_TEMP_HOTEND 200
-#define PREHEAT_1_TEMP_BED     60
-#define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
+#define PREHEAT_1_TEMP_HOTEND 205
+#define PREHEAT_1_TEMP_BED     70
+#define PREHEAT_1_FAN_SPEED     255 // Value from 0 to 255
 
 #define PREHEAT_2_TEMP_HOTEND 240
 #define PREHEAT_2_TEMP_BED    110
