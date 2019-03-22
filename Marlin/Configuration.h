@@ -24,7 +24,7 @@
  * JGAurora A5 3D Printer Firmware - Based on Marlin
  * Authors: Telli Mantelli, Kris Waclawski, Michael Gilardi & Samuel Pinches
  *
- * This fork of Marlin was created by the community for the 
+ * This fork of Marlin was created by the community for the
  * JGAurora A5 3D printer. Big thanks to the Marlin developers
  * for constant updates! We hope this opens up the possibilities
  * for the A5 community by providing a purely open source firmware.
@@ -451,8 +451,8 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  
-  // JGAurora A5 (tuned at 70C)  
+
+  // JGAurora A5 (tuned at 70C)
   #define DEFAULT_bedKp 10.00
   #define DEFAULT_bedKi .023
   #define DEFAULT_bedKd 305.4
@@ -680,7 +680,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-//#define S_CURVE_ACCELERATION
+#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
